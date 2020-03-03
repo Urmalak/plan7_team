@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body {font-family: 'Roboto', 'Areal', sans-serif; font-size:14px; color:#000; padding:0; margin:0; display:block;}
+
+.exp_cat_shadover {box-shadow: 0 0 0 1px #DDD; border:none;}
+.exp_cat_shadover:hover {box-shadow:0px 0px 12px 1px rgba(0,0,0,0.15);}
+.exp_cat_mob {display:none;}
+.exp_cat_com {display:compact;}
+.exp_cat_flex {display: flex; display: -webkit-flex; flex-flow: row wrap;}
+.exp_cat_flex .item {flex: 0 0 33%; -webkit-flex: 0 0 33%; -ms-flex: 0 0 33%;}
+.exp_cat_flox {display: flex; display: -webkit-flex;}
+.exp_cat_flox .rows {flex: 1 1 auto; -webkit-flex: 1 1 auto; -ms-flex: 1 1 auto;}
+.exp_cat_rule {background:none; fill:#CCC; color:#CCC;}
+.exp_cat_rule:hover {fill:#999; color:#999;}
+@media all and (max-width:1200px) {
+	.exp_cat_flex .item {flex: 0 0 50%;}
+	.exp_cat_flex .rows {flex-direction: column;}
+}
+@media all and (max-width: 1100px) {
+	.exp_cat_flox {flex-direction: column;}
+}
+@media all and (max-width:800px) {
+	.exp_cat_flex .item {flex: 0 0 100%;}
+	.exp_cat_mob {display:compact;}
+	.exp_cat_com {display:none;}
+}
